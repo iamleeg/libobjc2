@@ -16,7 +16,7 @@ int eh_trampoline();
 
 uint64_t cxx_exception_class;
 
-extern "C" void *__cxa_allocate_exception(size_t) noexcept;
+extern "C" void *__cxa_allocate_exception(size_t) CXA_ALLOCATE_EXCEPTION_SPECIFIER;
 
 /**
  * Our own definitions of C++ ABI functions and types.  These are provided
